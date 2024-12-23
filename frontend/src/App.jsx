@@ -7,7 +7,8 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import { Footer } from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Verify from './pages/Verify/Verify'
-import MyOrders from './pages/myOrders/myOrders'
+import MyOrders from './pages/myOrders/MyOrders'
+
 
 const App = () => {
 const [showlogin,setShowLogin] = useState(false)
@@ -23,6 +24,7 @@ const [showlogin,setShowLogin] = useState(false)
           <Route path='/Cart' element={<Cart />} />
           <Route path='/Order' element={<PlaceOrder />} />
           <Route path='/verify' element={<Verify/>} />
+          {/* <Route path='/myorders' element={<MyOrders />} /> */}
           <Route path='/myorders' element={<MyOrders />} />
 
         </Routes>
